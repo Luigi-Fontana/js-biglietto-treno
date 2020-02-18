@@ -16,5 +16,18 @@ var etaCliente = prompt('Inserisci la tua età per usufruire di eventuali sconti
 
 var prezzoKm = 0.21;
 // console.log(prezzoKm);
+var prezzoTot = kmViaggio * prezzoKm;
+// console.log(prezzoTot);
 
-document.getElementById('output').innerHTML = 'Il costo del viaggio è di € ' + (kmViaggio * prezzoKm);
+var sconto20 = prezzoTot * 20 / 100;
+// console.log(sconto20);
+var sconto40 = prezzoTot * 40 / 100;
+// console.log(sconto40);
+
+if (etaCliente < 18) {
+    document.getElementById('output').innerHTML = 'Il costo del viaggio è di € ' + (prezzoTot - sconto20);
+} else if (etaCliente >= 65) {
+    document.getElementById('output').innerHTML = 'Il costo del viaggio è di € ' + (prezzoTot - sconto40);
+} else {
+    document.getElementById('output').innerHTML = 'Il costo del viaggio è di € ' + prezzoTot;
+}
