@@ -13,3 +13,8 @@ var kmViaggio = prompt('Inserisci il numero dei Km che vuoi percorrere');
 // console.log(kmviaggio);
 var etaCliente = prompt('Inserisci la tua età per usufruire di eventuali sconti');
 // console.log(etaCliente);
+
+var prezzoKm = 0.21;
+// console.log(prezzoKm);
+
+document.getElementById('output').innerHTML = 'Il costo del viaggio è di € ' + (kmViaggio * prezzoKm);
