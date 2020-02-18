@@ -8,3 +8,8 @@ Il prezzo del biglietto è definito in base ai km (0.21 € al km), ma va applic
 // Definizione della Variabile per il Prezzo al Km
 // Calcolo del Prezzo in base ai Km
 // Applicazione sconto secondo le regole del programma
+
+var kmViaggio = prompt('Inserisci il numero dei Km che vuoi percorrere');
+// console.log(kmviaggio);
+var etaCliente = prompt('Inserisci la tua età per usufruire di eventuali sconti');
+// console.log(etaCliente);
